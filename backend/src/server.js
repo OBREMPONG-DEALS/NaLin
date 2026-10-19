@@ -1,3 +1,4 @@
+
 require("dotenv").config();
 
 const app = require("./app");
@@ -7,25 +8,31 @@ const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
   try {
+    console.log("Starting NaLin backend...");
+    console.log("Connecting to MongoDB...");
+
     await connectDB();
 
-    const server = app.listen(PORT, () => {
-      console.log(`NaLin API running on http://localhost:${PORT}`);
+    console.log("MongoDB connection successful.");
+
+    const server = app.listen(PORT, "0.0.0.0", () => {
+      console.log(`NaLin API is running on port ${PORT}`);
     });
 
     server.on("error", (error) => {
-      if (error.code === "EADDRINUSE") {
-        console.error(`Port ${PORT} is already in use.`);
-      } else {
-        console.error("Server error:", error.message);
-      }
+      console.error("SERVER ERROR:", error);
 
-      process.exitCode = 1;
+      process.exit(1);
     });
   } catch (error) {
-    console.error("Backend startup failed. Server was not started.");
-    process.exitCode = 1;
+    console.error("BACKEND STARTUP ERROR:");
+    console.error(error);
+    console.error("Error message:", error.message);
+    console.error("Error code:", error.code);
+
+    process.exit(1);
   }
 };
 
 startServer();
+
