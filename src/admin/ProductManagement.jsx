@@ -11,7 +11,9 @@ X,
 
 import "./ProductManagement.css";
 
-const API_URL = "http://localhost:5000/api/products";
+
+const API_URL = "https://nalin11.onrender.com/api/products";
+
 
 const categories = [
 "Gym Wear",

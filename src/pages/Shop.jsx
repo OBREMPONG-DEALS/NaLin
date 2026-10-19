@@ -25,7 +25,9 @@ import three from "../assets/images/three.jfif";
 
 import "../App.css";
 
-const API_URL = "http://localhost:5000/api";
+
+const API_URL = "https://nalin11.onrender.com/api";
+
 
 const WHATSAPP_NUMBER = "233506735003";
 

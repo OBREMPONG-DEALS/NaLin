@@ -25,8 +25,11 @@ import {
 import "./AdminDashboard.css";
 import ProductManagement from "./ProductManagement";
 
-const API_URL = "http://localhost:5000/api/products";
-const ORDERS_API_URL = "http://localhost:5000/api/orders";
+
+const API_URL = "https://nalin11.onrender.com/api/products";
+const ORDERS_API_URL = "https://nalin11.onrender.com/api/orders";
+
+
 const LOW_STOCK_LIMIT = 5;
 
 const getAdminToken = () => localStorage.getItem("ws_token");

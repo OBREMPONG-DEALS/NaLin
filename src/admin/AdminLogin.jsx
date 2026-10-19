@@ -11,7 +11,9 @@ ShieldCheck,
 AlertCircle,
 } from "lucide-react";
 
-const API_URL = "http://localhost:5000/api";
+
+const API_URL = "https://nalin11.onrender.com/api";
+
 
 function AdminLogin() {
 const navigate = useNavigate();
