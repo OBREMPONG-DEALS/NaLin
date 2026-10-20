@@ -9,7 +9,7 @@ const app = express();
 
 // Allow requests from the frontend.
 const allowedOrigins = [
-  process.env.CLIENT_URL || "http://localhost:5173",
+  process.env.CLIENT_URL || "https://nalin11.onrender.com",
 ];
 
 app.use(
