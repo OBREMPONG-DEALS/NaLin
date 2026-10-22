@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, ShieldCheck } from "lucide-react";
-import nalinLogo from "../assets/images/NalinLogo.png";
+import nalinLogo from "../assets/images/nalinLogo.png";
 import "../App.css";
 function Privacy() {
   return (

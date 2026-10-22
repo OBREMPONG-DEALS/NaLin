@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, FileText } from "lucide-react";
-import nalinLogo from "../assets/images/NalinLogo.PNG";
+import nalinLogo from "../assets/images/nalinlogo.png";
 import "../App.css";
 
 function Terms() {
