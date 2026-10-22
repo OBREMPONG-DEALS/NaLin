@@ -7,33 +7,38 @@ const orderRoutes = require("./routes/orderRoutes");
 
 const app = express();
 
-// Allow requests from the frontend.
+
+// Allowed frontend origins
 const allowedOrigins = [
-  process.env.CLIENT_URL || "https://nalin11.onrender.com",
+  process.env.CLIENT_URL || "https://nalinfitnessapparels.netlify.app",
+  "https://nalinfitnessapparels.netlify.app",
 ];
 
+
+
+// ✅ Configure CORS
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Allow requests without an Origin header, such as server-to-server calls.
+      // Allow requests without an Origin header (like server-to-server calls)
       if (!origin || allowedOrigins.includes(origin)) {
         return callback(null, true);
       }
-
       return callback(new Error("This origin is not allowed by CORS."));
     },
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
 
-// Parse JSON requests containing product details and multiple images.
+// ✅ Parse JSON requests (large payloads allowed)
 app.use(express.json({ limit: "80mb" }));
 
-// Parse URL-encoded form submissions.
+// ✅ Parse URL-encoded form submissions
 app.use(express.urlencoded({ extended: true, limit: "80mb" }));
 
-// Health check.
+// ✅ Health check route
 app.get("/api/health", (req, res) => {
   return res.status(200).json({
     success: true,
@@ -41,12 +46,12 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// Main API routes.
+// ✅ Main API routes
 app.use("/api/admin", adminAuthRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 
-// Root route.
+// ✅ Root route
 app.get("/", (req, res) => {
   return res.status(200).json({
     success: true,
@@ -54,7 +59,7 @@ app.get("/", (req, res) => {
   });
 });
 
-// Handle unknown routes.
+// ✅ Handle unknown routes
 app.use((req, res) => {
   return res.status(404).json({
     success: false,
@@ -62,7 +67,7 @@ app.use((req, res) => {
   });
 });
 
-// Central error handler.
+// ✅ Central error handler
 app.use((err, req, res, next) => {
   console.error("API error:", err.message);
 
