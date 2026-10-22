@@ -1,7 +1,7 @@
 import "./AdminLogin.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import NalinLogo from "../assets/images/NalinLogo.png";
+import NalinLogo from "../assets/images/NaLinLogo.PNG";
 import {
 LockKeyhole,
 Mail,
