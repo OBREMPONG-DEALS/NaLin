@@ -911,7 +911,7 @@ function Shop() {
           onClick={closeMenu}
         >
           <img
-            src={nalinLogo}
+            src={nalinlogo}
             alt="NaLin Fitness Apparels logo"
           />
         </Link>
@@ -970,7 +970,7 @@ function Shop() {
         >
           <div className="mobile-menu-header">
             <img
-              src={nalinLogo}
+              src={nalinlogo}
               alt="NaLin Fitness Apparels"
             />
 
@@ -1367,7 +1367,7 @@ function Shop() {
         <div className="footer-main">
           <div className="footer-brand">
             <img
-              src={nalinLogo}
+              src={nalinlogo}
               alt="NaLin Fitness Apparels"
               className="footer-logo"
             />

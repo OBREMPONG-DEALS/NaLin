@@ -862,7 +862,7 @@ useEffect(() => {
   <div className="footer-main">
     <div className="footer-brand">
       <img
-        src={NalinLogo}
+        src={nalinlogo}
         alt="NaLin Fitness Apparels"
         className="footer-logo"
       />
