@@ -18,7 +18,7 @@ import {
   Trash2,
 } from "lucide-react";
 
-import nalinLogo from "../assets/images/NalinLogo.PNG";
+import nalinlogo from "../assets/images/nalinlogo.png";
 import one from "../assets/images/one.jfif";
 import two from "../assets/images/two.jfif";
 import three from "../assets/images/three.jfif";

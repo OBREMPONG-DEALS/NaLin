@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import nalinLogo from "../assets/images/NalinLogo.PNG";
+import nalinlogo from "../assets/images/nalinlogo.png";
 
 import {
 ArrowRight,
@@ -613,7 +613,7 @@ return ( <div className="site contact-page">
     <div className="footer-main">
       <div className="footer-brand">
         <img
-          src={nalinLogo}
+          src={nalinlogo}
           alt="NaLin Fitness Apparels"
           className="footer-logo"
         />

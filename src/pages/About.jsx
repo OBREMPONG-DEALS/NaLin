@@ -13,8 +13,8 @@ Star,
 X,
 } from "lucide-react";
 
-import nalinLogo from "../assets/images/NalinLogo.PNG";
-import logo from "../assets/images/NalinLogo.PNG";
+import nalinlogo from "../assets/images/nalinlogo.png";
+
 import dot from "../assets/images/dot.jfif";
 import dott from "../assets/images/dott.jfif";
 import dottt from "../assets/images/dottt.jfif";
@@ -109,7 +109,7 @@ return ( <div className="site about-page">
       onClick={closeMenu}
     >
       <img
-        src={logo}
+        src={nalinlogo}
         alt="Nalin Fitness Apparels logo"
       />
     </Link>
@@ -155,7 +155,7 @@ return ( <div className="site about-page">
     >
       <div className="mobile-menu-header">
         <img
-          src={logo}
+          src={nalinlogo}
           alt="Nalin Fitness Apparels"
         />
 
@@ -586,7 +586,7 @@ return ( <div className="site about-page">
     <div className="footer-main">
       <div className="footer-brand">
         <img
-          src={nalinLogo}
+          src={nalinlogo}
           alt="NaLin Fitness Apparels"
           className="footer-logo"
         />

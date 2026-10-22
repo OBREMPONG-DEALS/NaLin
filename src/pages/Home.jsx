@@ -16,7 +16,7 @@ import {
 
 import "../App.css";
 
-import NalinLogo from "../assets/images/nalinlogo.png";
+import nalinlogo from "../assets/images/nalinlogo.png";
 import lifestyle from "../assets/images/lifestyle.jfif";
 import lifee from "../assets/images/lifee.jfif";
 import cons from "../assets/images/cons.jfif";
@@ -174,7 +174,7 @@ useEffect(() => {
           onClick={closeMenu}
         >
           <img
-            src={NalinLogo}
+            src={nalinlogo}
             alt="Nalin Fitness Apparels logo"
           />
         </a>
@@ -245,7 +245,7 @@ useEffect(() => {
   >
     <div className="mobile-menu-header">
       <img
-        src={NalinLogo}
+        src={nalinlogo}
         alt="Nalin Fitness Apparels"
       />
 

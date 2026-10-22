@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, FileText } from "lucide-react";
-import nalinLogo from "../assets/images/nalinlogo.png";
+import nalinlogo from "../assets/images/nalinlogo.png";
 import "../App.css";
 
 function Terms() {
@@ -8,7 +8,7 @@ function Terms() {
     <div className="legal-page">
       <header className="legal-header">
         <Link to="/" className="legal-logo">
-          <img src={nalinLogo} alt="NaLin Fitness Apparels" />
+          <img src={nalinlogo} alt="NaLin Fitness Apparels" />
         </Link>
 
         <Link to="/" className="legal-back">
