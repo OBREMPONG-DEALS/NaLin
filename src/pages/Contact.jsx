@@ -20,7 +20,7 @@ AlertCircle,
 
 import "../App.css";
 
-import logo from "../assets/images/NalinLogo.PNG";
+import logo from "../assets/images/nalinlogo.png";
 import cons from "../assets/images/cons.jfif";
 import conss from "../assets/images/conss.jfif";
 

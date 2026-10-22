@@ -1,7 +1,7 @@
 import "./AdminLogin.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import NalinLogo from "../assets/images/nalinlogo.png";
+import nalinLogo from "../assets/images/nalinlogo.png";
 import {
 LockKeyhole,
 Mail,
@@ -78,7 +78,7 @@ try {
 
 return ( <main className="nalin-login-page"> <section className="nalin-login-card"> <div className="nalin-login-logo">
 <img
-src={NalinLogo}
+src={nalinLogo}
 alt="NaLin Fitness Apparels"
 onError={(event) => {
 event.currentTarget.style.display = "none";
