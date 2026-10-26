@@ -861,39 +861,34 @@ useEffect(() => {
       <footer className="site-footer">
   <div className="footer-main">
     <div className="footer-brand">
-      <img
-        src={nalinlogo}
-        alt="NaLin Fitness Apparels"
-        className="footer-logo"
-      />
-
+      <img src={nalinlogo} alt="NaLin Fitness Apparels" className="footer-logo" />
       <p>
-        Stylish, comfortable and affordable fitness apparel
-        designed to help you move with confidence.
+        Stylish, comfortable and affordable fitness apparel designed to help you move with confidence.
       </p>
-
       <div className="footer-socials">
-        <a
-          href="#"
-          aria-label="Instagram"
+        <a 
+          href="https://www.instagram.com/nalin_fitness_apparel?utm_source=ig_web_button_share_sheet&exln=ZDNlZDc0MzIxNw==" 
+          target="_blank" 
+          rel="noreferrer" 
+          aria-label="Instagram" 
           className="footer-social instagram"
         >
           <span className="instagram-text">◎</span>
         </a>
-
-        <a
-          href="https://www.tiktok.com/@nancy0wusua"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="TikTok"
+        <a 
+          href="https://www.tiktok.com/@nancy0wusua" 
+          target="_blank" 
+          rel="noreferrer" 
+          aria-label="TikTok" 
           className="footer-social tiktok"
         >
           <Music2 size={18} strokeWidth={1.6} />
         </a>
-
-        <a
-          href="#"
-          aria-label="Facebook"
+        <a 
+          href="https://www.facebook.com/profile.php?id=100049981934558&mibextid=wwXIfr" 
+          target="_blank" 
+          rel="noreferrer" 
+          aria-label="Facebook" 
           className="footer-social facebook"
         >
           <span className="facebook-text">f</span>
@@ -903,7 +898,6 @@ useEffect(() => {
 
     <div className="footer-column">
       <span>Explore</span>
-
       <Link to="/">Home</Link>
       <Link to="/shop">Shop</Link>
       <Link to="/about">About</Link>
@@ -912,54 +906,31 @@ useEffect(() => {
 
     <div className="footer-column">
       <span>Customer Care</span>
-
       <Link to="/privacy">Privacy Policy</Link>
       <Link to="/terms">Terms & Conditions</Link>
-
-      <a href="mailto:nmcdavies1@gmail.com">
-        Email Us
-      </a>
-
-      <a
-        href="https://wa.me/233506735003"
-        target="_blank"
-        rel="noreferrer"
-      >
-        WhatsApp
-      </a>
+      <a href="mailto:nmcdavies1@gmail.com">Email Us</a>
+      <a href="https://wa.me/233506735003" target="_blank" rel="noreferrer">WhatsApp</a>
     </div>
 
     <div className="footer-column">
       <span>Payment</span>
-
       <div className="footer-payment">
         <strong>MTN MoMo</strong>
-
-        <p>
-          Mobile Money payments are accepted.
-        </p>
+        <p>Mobile Money payments are accepted.</p>
       </div>
-
-      <span className="footer-location-label">
-        Location
-      </span>
-
+      <span className="footer-location-label">Location</span>
       <p className="footer-location">
-        Weija-New Aplaku
-        <br />
-        AIT University, Sea View Campus
+        Weija-New Aplaku <br /> AIT University, Sea View Campus
       </p>
     </div>
   </div>
 
   <div className="footer-bottom">
-    <p>
-      © 2026 NaLin Fitness Apparels. All rights reserved.
-    </p>
-
+    <p>© 2026 NaLin Fitness Apparels. All rights reserved.</p>
     <p>Developed by McK MEDIA.</p>
   </div>
 </footer>
+
       {/* =====================================================
           FLOATING WHATSAPP BUTTON
           ===================================================== */}

@@ -6421,4 +6421,12 @@ font-size: 12px;
 .contact-form .form-submit:disabled:hover {
   opacity: 0.65;
 }
+.footer-logo {
+  width: 140px;        /* adjust size as needed */
+  height: auto;        /* keep aspect ratio */
+  display: block;
+  background: none !important;   /* remove any background */
+  filter: none !important;       /* cancel unwanted filters */
+  object-fit: contain;           /* keep full logo visible */
+}
 
